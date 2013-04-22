@@ -1,0 +1,35 @@
+Definition NoSQL: (Buch)
+Berücksichtigung von
+1. zugrundeliegende Datenmodell ist nicht relational
+2. Systeme sind verteilt und skalieren horizontal
+3. System ist OpenSource
+4. System ist schemafrei oder hat nur schwache schemarestriktionen
+5. Aufgrund der verteilten Architektur unterstützt das System eine einfache Datenreplikation
+6. Das System biete  eine einfache API
+7. Konsistenzmodell: Eventually consistent und BASE - nicht ACID
+
+
+
+NoREL wäre besser, da nicht nur abfragesprache, sondern auch der Untergrund anders ist
+
+Stammt aus Web-Hintergrund
+
+Web 2.0
+Wikipedia: O’Reilly und Battelle fassten Schlüsselprinzipien zur Charakterisierung von Anwendungen zusammen, die dem Begriff Web 2.0 zugeordnet werden können:
+das Web als Plattform (anstatt des lokalen Rechners)
+datengetriebene Anwendungen (Inhalte sind wichtiger als das Aussehen)
+die Vernetzung wird verstärkt durch eine „Architektur des Mitwirkens“ (jeder kann mitmachen)
+Innovationen beim Aufbau von Systemen und Seiten durch die Verwendung von Komponenten, welche von verschiedenen Entwicklern erstellt worden sind und beliebig miteinander kombiniert werden können (ähnlich dem Open-Source-Entwicklungsmodell)
+einfache Geschäftsmodelle durch das verteilte, gemeinsame Nutzen von Inhalten und technischen Diensten
+das Ende des klassischen Software-Lebenszyklus; die Projekte befinden sich immerwährend im Beta-Stadium
+die Software geht über die Fähigkeiten eines einzelnen Verwendungszwecks hinaus
+es wird nicht nur auf die Vorhut von Web-Anwendungen abgezielt, sondern auf die breite Masse der Anwendungen
+
+http://techcrunch.com/2012/08/22/how-big-is-facebooks-data-2-5-billion-pieces-of-content-and-500-terabytes-ingested-every-day/
+Ende August 2012:
+500+ terabyte pro Tag
+2.7 milliarden likes
+300 millionen fotos pro Tag
+105 Terabytes aller 30 min
+täglich 70000 Suchanfragen
+>100Petabytes in einem Dadoop disk cluster - Aufteilund der Datnn auf verschiedene Cluster ist Ziel

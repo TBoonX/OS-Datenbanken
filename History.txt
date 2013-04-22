@@ -1,0 +1,23 @@
+NoSQL Edlich:
+1979 erste key/Hash DB von ken thompsen: DBM
+80er: Lotus Notes, BerkleyDB, GT.M - Vorreiter
+98 Carlo Strozzi erstes mal noSQL - erweitertes schnelles RDBMS (Open Source, Light Weight)
+
+
+
+
+http://blog.knuthaugen.no/2010/03/a-brief-history-of-nosql.html:
+66: IBM IMS hierarchische DB für Apollo Programm (Baupläne Saturn V Mondrakete und apollo space vehicle)
+79  Ken Thompson: DBM (hash- und dateibasiert)
+80er: NDBM(Berkeley version  mit mehreren Datenbankinstanzen), GT.M(key-value), BerkeleyDB (key/value, Sleepycat-Software - seit 2006 zu Oracel), Lotus notes (document database (veteilt), derzeit von IBM)
+viele DBs entstehen: Neo4J(graph, 2000), db4o(object, 2000), QDBM(faste reimplementation of origin DBM), Memcached/memcachedb(memory-only, 2003), Infogrid(graph, 2005), CouchDB(2005, document), BigTable(2004, storage system)
+2007: research paper amazons dynamo
+MongoDB (2007/2009)
+2008: Facebook release Cassandra project
+2008: Project Voldemort
+2009:Terrastore, Redis, HBase, Hypertable, VertexDB
+Eric evans named NoSQL
+
+
+http://en.wikipedia.org/wiki/NoSQL:
+Eric evans used term nosql for event to discuss open-source distributed databases
