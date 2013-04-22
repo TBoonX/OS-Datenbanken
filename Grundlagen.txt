@@ -1,3 +1,9 @@
 ﻿MapReduce:
 ------------------
+MapReduce: Simplified Data Processing on Large Clusters
+Jeffrey Dean and Sanjay Ghemawat 2004
 
+- stammt aus der funktionalen Programmierung
+- map: key/value pair to key/value pairs
+- reduce: Zwischenergebisse mit gleichen keys werden zusammengefasst
+- map/reduce von  Lisp inspiriert
