@@ -7,3 +7,20 @@ Jeffrey Dean and Sanjay Ghemawat 2004
 - map: key/value pair to key/value pairs
 - reduce: Zwischenergebisse mit gleichen keys werden zusammengefasst
 - map/reduce von  Lisp inspiriert
+- Ursprung: Google
+- Implementationen in  C++, Erlang, Java, Python
+- Ziel ist dem Programmierer nur mit der logik von map/reduce zu konfrontieren - Parallelisierung, Fehlerbehandlung, IO, Kommunikation, Überwachung, ... übernimmt das System
+
+Beispiel:
+Input: Text, map- und reduce-Funktion
+map: ließt wort und erzeugt key: wort, value: 1
+reduce: summiert values gleicher keys auf und erzeugt value: anzahl
+-> Häufigkeit von Wörtern
+
+
+
+
+CAP:
+-------------------
+
+
