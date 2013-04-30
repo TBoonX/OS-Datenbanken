@@ -32,4 +32,6 @@ Ende August 2012:
 300 millionen fotos pro Tag
 105 Terabytes aller 30 min
 täglich 70000 Suchanfragen
->100Petabytes in einem Dadoop disk cluster - Aufteilund der Datnn auf verschiedene Cluster ist Ziel
+>100Petabytes in einem Hadoop disk cluster - Aufteilund der Datnn auf verschiedene Cluster ist Ziel
+
+Horizontale Skalierung ist Ziel

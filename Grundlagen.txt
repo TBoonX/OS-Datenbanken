@@ -9,7 +9,7 @@ Jeffrey Dean and Sanjay Ghemawat 2004
 - map/reduce von  Lisp inspiriert
 - Ursprung: Google
 - Implementationen in  C++, Erlang, Java, Python
-- Ziel ist dem Programmierer nur mit der logik von map/reduce zu konfrontieren - Parallelisierung, Fehlerbehandlung, IO, Kommunikation, Überwachung, ... übernimmt das System
+- Ziel ist dem Programmierer nur mit der Logik von map/reduce zu konfrontieren - Parallelisierung, Fehlerbehandlung, IO, Kommunikation, Überwachung, ... übernimmt das System
 
 Beispiel:
 Input: Text, map- und reduce-Funktion
@@ -22,5 +22,21 @@ reduce: summiert values gleicher keys auf und erzeugt value: anzahl
 
 CAP:
 -------------------
+Consistency: Transaktionen erreichen konsistenten Zustand im gesamten verteilten System
+Availability: Verfügbarkeit und akzeptable Reaktionszeit ist gegeben (auch bei Ausfall einzelner Knoten) mit 100% Datenverfügbarkeit
+Partition tolerance: Aufall von Kommunikatiosverbindungen führt nicht zum Ausfall des Systemes (eingeschränkt noch nutzbar)
 
+
+
+
+Consistent hashing: 1997 David Karger
+--------------------
+Hasing mit dem Ziel bei horizontaler Skalierung eine gleichverteilung der Daten anhand deren Hashwerte zu erreichen.
+Jeder Server erhält außerdem einen Hashwert
+Zuordnung der Daten zu Servern über ähnliche Hashwerte
+- bsp: Amazon Dynamo
+Vorteile:
+- gleichverteilung (durch hashfunktion und die Nutzung virtueller Server [n pro server])
+- hinzufügen/entfernen eines servers ist kein problem, da wieder entsprechend des hashwerten zugeordnet wird
+- Read/Write Anfrage ohne Umwege direkt auf server realisierbar - kein metaserver notwendig
 
