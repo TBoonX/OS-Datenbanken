@@ -24,8 +24,26 @@ CAP:
 -------------------
 Consistency: Transaktionen erreichen konsistenten Zustand im gesamten verteilten System
 Availability: Verfügbarkeit und akzeptable Reaktionszeit ist gegeben (auch bei Ausfall einzelner Knoten) mit 100% Datenverfügbarkeit
-Partition tolerance: Aufall von Kommunikatiosverbindungen führt nicht zum Ausfall des Systemes (eingeschränkt noch nutzbar)
+Partition tolerance: Aufall von Kommunikatiosverbindungen (Oder Veränderungen der Nodes) führt nicht zum Ausfall des Systemes (eingeschränkt noch nutzbar)
+Maximal 2 der Eigenschaften sind zugleich verfügbar
 
+
+
+BASE: Konzept
+-------------------
+Basically Available, Soft State, Eventual Consistent
+Notwendigkeit der Verfügbarkeit und horizontalen Skalierung -> Consistence wird gelockert
+DB befindet sich fließend im konsistenten und inkonsistenten Zustand
+Duplikate und Synchronisation
+"optimistischer Ansatz"
+
+
+
+Eventual-Consistency:
+-----------------
+lockerer Konsistenzbegriff
+Nodes können unterschiedliche Daten (oder unterschiedliche Veriosnen der Dtane) besitzen
+Inconsistence-window: Zeitfenster für synchronisation
 
 
 
@@ -40,3 +58,8 @@ Vorteile:
 - hinzufügen/entfernen eines servers ist kein problem, da wieder entsprechend des hashwerten zugeordnet wird
 - Read/Write Anfrage ohne Umwege direkt auf server realisierbar - kein metaserver notwendig
 
+
+MVCC: Konzept
+-------------------
+Multi-version concurrency control
+Schreiben eines Objektes erueugt ein neues mit neuem Zeitstempel und verweis auf vorgängerversion
