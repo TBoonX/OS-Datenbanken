@@ -52,6 +52,7 @@ Consistent hashing: 1997 David Karger
 Hasing mit dem Ziel bei horizontaler Skalierung eine gleichverteilung der Daten anhand deren Hashwerte zu erreichen.
 Jeder Server erhält außerdem einen Hashwert
 Zuordnung der Daten zu Servern über ähnliche Hashwerte
+Kopien der n Vorgänger der Knoten können mitgespeichert werden
 - bsp: Amazon Dynamo
 Vorteile:
 - gleichverteilung (durch hashfunktion und die Nutzung virtueller Server [n pro server])
@@ -62,4 +63,5 @@ Vorteile:
 MVCC: Konzept
 -------------------
 Multi-version concurrency control
-Schreiben eines Objektes erueugt ein neues mit neuem Zeitstempel und verweis auf vorgängerversion
+Schreiben eines Objektes erueugt ein neues mit neuem Zeitstempel, ID und Verweis auf vorgängerversion
+Transaktionen werden nur wiederholt, wenn die Dateiversion zu Beginn jener zum Ende entspricht und die Datei geschrieben werden sollte
