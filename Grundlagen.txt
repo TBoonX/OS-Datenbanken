@@ -65,3 +65,21 @@ MVCC: Konzept
 Multi-version concurrency control
 Schreiben eines Objektes erueugt ein neues mit neuem Zeitstempel, ID und Verweis auf vorgängerversion
 Transaktionen werden nur wiederholt, wenn die Dateiversion zu Beginn jener zum Ende entspricht und die Datei geschrieben werden sollte
+
+
+
+REST: Paradigma
+-------------------
+REpresentational State Transfer
+Jedes Ziel hat eine eindeutige oder mehrere Adressen
+meist http
+anfrage mit header und body  und zusätzlich Methode mit header und body
+GET, PUT, POST, DELETE und HEAD
+GET: lese ressource  - immer gleiche Rückgabe
+HEAD: lese Information zu ressourcen - immer gleiche Rückgabe
+PUT: schreibe Resource - doppelter gleicher PUT hat selben effect wie einer
+DELETE: entferne Resource - doppelter aufruf wie einer
+POST: Senden von Informationen um resourcen zu ändern oder zu erzeugen oder ohne nebeneffect - nicht idempotent
+
+Zustandsinformationen zwischen anfragen sollen nicht gespeichert werden
+Links/Verweise auf weitere ressourcen in ressourcen
