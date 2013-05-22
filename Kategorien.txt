@@ -1,0 +1,55 @@
+﻿Key-/Value
+---------------
+Daten werden gruppiert und sind optional mit Schema versehen
+Zugriff über Schlüssen (eventuell mehrere Versionen)
+schnell, da nur Schlüssel eindeutig sein muss und Zugriiff des (hash) keys performant
+Redis, Chordless, Riak, MEMBASE, Tyrant
+
+
+
+
+
+Document
+---------------
+einzig Dokumente - tupel, tabelle, collections
+innerhalb von Dokumenten sind felder aus key/value
+ausgabe und speicherung in JSON, XML oder YAML
+meist ohne Join
+vertreter: MongoDB, CouchDB, Amazon SimpleDB, IBM Lotus Notes, Terrastore, ThruDB, OrientDB, RavenDB
+(XML-Datenbanken zählen dazu)
+Ziel: unstrukturierte Daten speichern, Zugriff ermöglichen und Skalierbarkeit
+
+
+
+Column-orientated
+----------------
+Attribute werden je in einer eigenen Tabelle hintereinander abgelegt (pro Zeit ein eigener Eintrag) - eig. objekt mit name, attribute und Zeitstempel
+Nachteile:
+	aufwendiges suchen und einfügen sowie schrieben und lesen von objektstrukturen(zusammenhängenden Spaltendaten)
+	
+Vorteile:
+	Datenanalyse, Datenkompression und Caching
+	OLAP und Data warehouse
+	
+Amazons Dynamo, Cassandra und Projekt Voldemort: consistence hashing
+
+wide-column / BigTable: HBase, Cassandra, Hypertable;
+	Schlüssel zeigt auf mehrere Tupel bzw. versionen; -> alter werden automatisch gelöscht
+	Tabellen werden in tablets unterteilt (wonach tabelle automatisch bei bestimmter Größe aufteteilt wird)
+	...
+
+
+
+
+
+
+Graphendatenbanken
+----------------
+Knoten=Objekte
+Kanten=Beziehungen
+graphenoptimales Format
+mit optionalem Schema
+Kanten können typisiert sein
+keine einheitliche Abfragesprache
+teilweise ACID
+geeignet semantische Beziehungen zwischen Objekten darzustellen -> semantic web
