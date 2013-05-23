@@ -21,15 +21,3 @@ Eric evans named NoSQL
 
 http://en.wikipedia.org/wiki/NoSQL:
 Eric evans used term nosql for event to discuss open-source distributed databases
-
-
-
-
-Allgemeine Ziele:
-horizontale Skallierung
-Schneller Lese, aber auch Schreibzugriff
-schemafreiheit
-parallele verarbeitung
-Hochverfügbarkeit
-auch günstig in kosten und administration
-Sehr große Datenmengen

@@ -48,6 +48,7 @@ wide-column / BigTable: HBase, Cassandra, Hypertable;
 
 -> BigTable: 
 	Zugriff über row, column und time
+	
 -> Cassandra, Amazon SImpleDB und HBase:
 	mehrdimensionale Tabellen
 	Format: n*[Domain / Keyspace] x [item / Column Family] x [Key x] n*[key+Value]

@@ -35,3 +35,13 @@ täglich 70000 Suchanfragen
 >100Petabytes in einem Hadoop disk cluster - Aufteilund der Datnn auf verschiedene Cluster ist Ziel
 
 Horizontale Skalierung ist Ziel
+
+
+Allgemeine Ziele:
+horizontale Skallierung
+Schneller Lese, aber auch Schreibzugriff
+schemafreiheit
+parallele verarbeitung
+Hochverfügbarkeit
+auch günstig in kosten und administration
+Sehr große Datenmengen
