@@ -1,4 +1,10 @@
 ﻿http://www.ivanomalavolta.com/diving-into-nosql/
 
+no relations
 http://www.datamation.com/news/tech-comics-why-i-love-apple-2.html
+
+http://innovativeinteractivity.com/2012/01/03/a-primer-on-nosql-technologies/
+
+choose NoSQL
+http://crudcomic.com/page/10
 

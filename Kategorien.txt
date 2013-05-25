@@ -61,9 +61,11 @@ Graphendatenbanken
 ----------------
 Knoten=Objekte
 Kanten=Beziehungen
+key/vaue auf beidem
 graphenoptimales Format
 mit optionalem Schema
 Kanten können typisiert sein
 keine einheitliche Abfragesprache
 teilweise ACID
 geeignet semantische Beziehungen zwischen Objekten darzustellen -> semantic web
+keine joins
