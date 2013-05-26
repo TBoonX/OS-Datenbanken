@@ -24,7 +24,7 @@ CAP:
 -------------------
 Consistency: Transaktionen erreichen konsistenten Zustand im gesamten verteilten System
 Availability: Verfügbarkeit und akzeptable Reaktionszeit ist gegeben (auch bei Ausfall einzelner Knoten) mit 100% Datenverfügbarkeit
-Partition tolerance: Aufall von Kommunikatiosverbindungen (Oder Veränderungen der Nodes) führt nicht zum Ausfall des Systemes (eingeschränkt noch nutzbar)
+Partition tolerance: Ausfall von Kommunikationsverbindungen (Oder Veränderungen der Nodes) führt nicht zum Ausfall des Systemes (eingeschränkt noch nutzbar)
 Maximal 2 der Eigenschaften sind zugleich verfügbar
 
 
