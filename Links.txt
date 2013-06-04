@@ -10,3 +10,5 @@ http://crudcomic.com/page/10
 
 how to write a cv
 http://geekandpoke.typepad.com/geekandpoke/2011/01/nosql.html
+
+http://de.slideshare.net/cloudera/hw09-hadoop-development-at-facebook-hive-and-hdfs
